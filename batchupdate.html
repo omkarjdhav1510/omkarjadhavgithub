@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student update page</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js" ></script>
+        <script src="popper.min.js" ></script>
+        <script src="bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <form action="batchupdate" method="POST">
+
+            <label for="bid">Enter Batch Id:</label>
+            <input type="text" name="bid" id="bid">
+            <br/>  
+
+            <label for="bname">Enter Batch Name:</label>
+            <input type="text" name="bname" id="bname">
+            <br/>
+
+            <label for="sdate">Start Date:</label>
+            <input type="date" name="sdate" id="sdate">
+            <br/>
+
+            <label for="edate">End Date:</label>
+            <input type="date" name="edate" id="edate">
+            <br/>
+
+            
+            
+            <input type="submit" value="update" class="btn btn-primary">
+        </form>
+        </div>
+    </body>
+</html>

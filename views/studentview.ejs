@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Details</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js" ></script>
+        <script src="popper.min.js" ></script>
+        <script src="bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <table class="table table-dark table-striped" color="blue">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>username</th>
+                        <th>firstname</th>
+                        <th>lastname</th>
+                        <th>email</th>
+                        <th>mobilenumber</th>
+                        <th>birthdate</th>
+                        <th>gender</th>
+                        <th>password</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <% studs.forEach(function(regstudent){%>
+                    <tr>
+                        <td><%=regstudent.id %></td>
+                        <td><%=regstudent.username %></td>
+                        <td><%=regstudent.firstname %></td>
+                        <td><%=regstudent.lastname %></td>
+                        <td><%=regstudent.email %></td>
+                        <td><%=regstudent.mobilenumber %></td>
+                        <td><%=regstudent.birthdate %></td>
+                        <td><%=regstudent.gender %></td>
+                        <td><%=regstudent.password %></td>
+                    </tr>
+                    <%});
+                    %>
+                </tbody>
+
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>register page</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <table>
+                <form action="studentregister" method="POST">
+                    <tr>
+                        <td><label for="uname">Enter Username:</label> </td>
+                        <td><input type="text" name="uname" id="uname"></td>                     
+                    </tr>   
+
+                    <tr>
+                        <td><label for="fname">Enter Firstname:</label></td>
+                        <td><input type="text" name="fname" id="fname"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="lname">Enter Lastname:</label></td> 
+                        <td><input type="text" name="lname" id="lname"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="email">Enter Email:</label></td>     
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="mobile">Enter Mobile NO:</label> </td>
+                        <td><input type="text" name="mobile" id="mobile"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="date">Birth Date:</label> </td>   
+                        <td><input type="date" name="date" id="date"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="gender">Select Gender</label> </td>                          
+                        <td><input type="radio" name="gender" id="gender" value="male" >Male   
+                            <input type="radio" name="gender" id="gender" value="female">Female</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="password">Enter Password:</label></td>
+                        <td><input type="text" name="password" id="password"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="register" class="btn btn-primary"></td>
+                        <a href="http://localhost:2021/test1">Update</a>
+                        <a href="http://localhost:2021/test2">Delete</a>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

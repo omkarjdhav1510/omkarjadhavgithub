@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Batch Details</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js" ></script>
+        <script src="popper.min.js" ></script>
+        <script src="bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <table class="table table-dark table-striped" color="blue">
+                <thead>
+                    <tr>
+                        <th>Sid</th>
+                        <th>Student name</th>
+                        <th>Bid</th>
+                        <th>Batch Name</th>
+                       
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <% adds.forEach(function(studentbatch){%>
+                    <tr>
+                        <td><%=studentbatch.bid %></td>
+                        <td><%=studentbatch.sname %></td>
+                        <td><%=studentbatch.bid %></td>
+                        <td><%=studentbatch.batchname %></td>
+                        
+                    </tr>
+                    <%});
+                    %>
+                </tbody>
+
+            </table>
+        </div>
+    </body>
+</html>

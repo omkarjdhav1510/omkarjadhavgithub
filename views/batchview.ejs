@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Batch Details</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js" ></script>
+        <script src="popper.min.js" ></script>
+        <script src="bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <table class="table table-dark table-striped" color="blue">
+                <thead>
+                    <tr>
+                        <th>bid</th>
+                        <th>batch name</th>
+                        <th>start date</th>
+                        <th>end date</th>
+                       
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <% batchs.forEach(function(batch){%>
+                    <tr>
+                        <td><%=batch.bid %></td>
+                        <td><%=batch.batchame %></td>
+                        <td><%=batch.startdate %></td>
+                        <td><%=batch.enddate %></td>
+                        
+                    </tr>
+                    <%});
+                    %>
+                </tbody>
+
+            </table>
+        </div>
+    </body>
+</html>

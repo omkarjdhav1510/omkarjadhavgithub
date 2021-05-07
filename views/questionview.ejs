@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question Details</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js" ></script>
+        <script src="popper.min.js" ></script>
+        <script src="bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <table class="table table-dark table-striped" color="blue">
+                <thead>
+                    <tr>
+                        <th>Question ID</th>
+                        <th>Question</th>
+                        <th>Options</th>
+                        <th>Answer</th>
+                       
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <% que.forEach(function(questions){%>
+                    <tr>
+                        <td><%=questions.qid %></td>
+                        <td><%=questions.question %></td>
+                        <td><%=questions.optionA %></td>
+                        <td><%=questions.optionB %></td>
+                        <td><%=questions.optionC %></td>
+                        <td><%=questions.optionD %></td>
+                        <td><%=questions.answer %></td>
+                        
+                    </tr>
+                    <%});
+                    %>
+                </tbody>
+
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>batch</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js" ></script>
+        <script src="popper.min.js" ></script>
+        <script src="bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <form action="createbatch" method="POST">
+            <label for="bname">batch Name:</label>
+            <input type="text" name="bname" id="bname">
+            <br/>
+            <label for="sdate">Start Date:</label>
+            <input type="date" name="sdate" id="sdate">
+            <br/>
+            <label for="edate">End Date:</label>
+            <input type="date" name="edate" id="edate">
+            <br/>
+            <input type="submit" value="register" class="btn btn-primary">
+
+            <a href="http://localhost:2021/test7">Update</a>
+            <a href="http://localhost:2021/test8">Delete</a>
+        </form>
+        </div>
+    </body>
+</html>

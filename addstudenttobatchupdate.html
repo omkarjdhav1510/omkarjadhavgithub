@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student update page</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js" ></script>
+        <script src="popper.min.js" ></script>
+        <script src="bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <form action="addstudenttobatchupdate" method="POST">
+
+            <label for="sid">Enter Student Id:</label>
+            <input type="text" name="sid" id="sid">
+            <br/>  
+
+            <label for="sname">Enter Student Name:</label>
+            <input type="text" name="sname" id="sname">
+            <br/>
+
+            <label for="bid">Enter Batch Id:</label>
+            <input type="text" name="bid" id="bid">
+            <br/>
+
+            <label for="bname">Enter Batch Name:</label>
+            <input type="text" name="bname" id="bname">
+            <br/>
+
+        
+            <input type="submit" value="update" class="btn btn-primary">
+        </form>
+        </div>
+    </body>
+</html>

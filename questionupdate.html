@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question update page</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js" ></script>
+        <script src="popper.min.js" ></script>
+        <script src="bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <form action="questionupdate" method="POST">
+
+            <label for="qid">Enter Question Id:</label>
+            <input type="text" name="qid" id="qid">
+            <br/>  
+
+            <label for="question">Enter Question:</label>
+            <input type="text" name="question" id="question">
+            <br/>
+
+            <label for="optionA">Enter OptionA:</label>
+            <input type="text" name="optionA" id="optionA">
+            <br/>
+            <label for="optionB">Enter OptionB:</label>
+            <input type="text" name="optionB" id="optionB">
+            <br/>
+
+            <label for="optionC">Enter OptionC:</label>
+            <input type="text" name="optionC" id="optionC">
+            <br/>
+
+            <label for="optionD">Enter OptionD:</label>
+            <input type="text" name="optionD" id="optionD">
+            <br/>
+
+
+            <label for="answer">Enter Answer:</label>
+            <input type="text" name="answer" id="answer">
+            <br/>
+            
+            <input type="submit" value="update" class="btn btn-primary">
+        </form>
+        </div>
+    </body>
+</html>

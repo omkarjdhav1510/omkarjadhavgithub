@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>batch</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery.min.js" ></script>
+        <script src="popper.min.js" ></script>
+        <script src="bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <form action="scheduleTestupdate" method="POST">
+            <label for="sid">Student Id:</label>
+            <input type="text" name="sid" id="sid">
+            <br/>   
+            <label for="bid">Batch Id:</label>
+            <input type="text" name="bid" id="bid">
+            <br/>   
+            <label for="bname">Batch Name:</label>
+            <input type="text" name="bname" id="bname">
+            <br/>
+            <label for="edate">Exam Date:</label>
+            <input type="date" name="edate" id="edate">
+            <br/> 
+            <input type="submit" value="updater" class="btn btn-primary">
+        </form>
+        </div>
+    </body>
+</html>
